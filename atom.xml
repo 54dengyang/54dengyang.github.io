@@ -3,11 +3,11 @@
   <title>dengyang</title>
   
   <subtitle>dy</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/120224/atom.xml" rel="self"/>
   
-  <link href="http://120224.com/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2018-12-26T13:13:36.231Z</updated>
-  <id>http://120224.com/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>Young Teng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://120224.com/2018/12/26/hello-world/"/>
-    <id>http://120224.com/2018/12/26/hello-world/</id>
+    <link href="http://yoursite.com/2018/12/26/hello-world/"/>
+    <id>http://yoursite.com/2018/12/26/hello-world/</id>
     <published>2018-12-26T13:13:36.231Z</published>
     <updated>2018-12-26T13:13:36.231Z</updated>
     
