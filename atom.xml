@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://120224.com/"/>
-  <updated>2018-12-28T18:18:02.218Z</updated>
+  <updated>2018-12-28T18:18:45.834Z</updated>
   <id>http://120224.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>网站更新情况记录</title>
-    <link href="http://120224.com/2018/12/29/the_logs_of_web_update/"/>
-    <id>http://120224.com/2018/12/29/the_logs_of_web_update/</id>
-    <published>2018-12-28T18:12:01.000Z</published>
-    <updated>2018-12-28T18:18:02.218Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="2018-12-29-添加置顶功能"><a href="#2018-12-29-添加置顶功能" class="headerlink" title="2018-12-29: 添加置顶功能"></a>2018-12-29: 添加置顶功能</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;2018-12-29-添加置顶功能&quot;&gt;&lt;a href=&quot;#2018-12-29-添加置顶功能&quot; class=&quot;headerlink&quot; title=&quot;2018-12-29: 添加置顶功能&quot;&gt;&lt;/a&gt;2018-12-29: 添加置顶功能&lt;/h1&gt;
-      
-    
-    </summary>
-    
-      <category term="网站更新" scheme="http://120224.com/categories/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0/"/>
-    
-    
-      <category term="hexo" scheme="http://120224.com/tags/hexo/"/>
-    
-  </entry>
   
   <entry>
     <title>网站闲置了一年多之后的感想</title>
@@ -63,6 +38,31 @@
     
     
       <category term="感想" scheme="http://120224.com/tags/%E6%84%9F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站更新情况记录</title>
+    <link href="http://120224.com/2017/12/29/the_logs_of_web_update/"/>
+    <id>http://120224.com/2017/12/29/the_logs_of_web_update/</id>
+    <published>2017-12-28T18:12:01.000Z</published>
+    <updated>2018-12-28T18:39:09.566Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2018-12-29-添加置顶功能"><a href="#2018-12-29-添加置顶功能" class="headerlink" title="2018-12-29: 添加置顶功能"></a>2018-12-29: 添加置顶功能</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;2018-12-29-添加置顶功能&quot;&gt;&lt;a href=&quot;#2018-12-29-添加置顶功能&quot; class=&quot;headerlink&quot; title=&quot;2018-12-29: 添加置顶功能&quot;&gt;&lt;/a&gt;2018-12-29: 添加置顶功能&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="网站更新" scheme="http://120224.com/categories/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0/"/>
+    
+    
+      <category term="hexo" scheme="http://120224.com/tags/hexo/"/>
     
   </entry>
   
