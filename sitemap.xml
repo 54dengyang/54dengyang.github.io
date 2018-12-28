@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://120224.com/about/index.html</loc>
+    
+    <lastmod>2018-12-28T19:37:08.656Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://120224.com/2017/12/29/the_logs_of_web_update/</loc>
     
-    <lastmod>2018-12-28T19:13:29.442Z</lastmod>
+    <lastmod>2018-12-28T19:34:11.800Z</lastmod>
     
   </url>
   
@@ -54,13 +61,6 @@
     <loc>http://120224.com/books/index.html</loc>
     
     <lastmod>2018-12-27T14:29:38.582Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://120224.com/about/index.html</loc>
-    
-    <lastmod>2018-12-27T14:29:38.580Z</lastmod>
     
   </url>
   
