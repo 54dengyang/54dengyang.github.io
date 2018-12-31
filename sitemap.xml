@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://120224.com/2017/12/29/the_logs_of_web_update/</loc>
+    
+    <lastmod>2018-12-31T17:08:52.093Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://120224.com/2017/08/15/leetcode-01-twosum/</loc>
     
     <lastmod>2018-12-31T05:50:00.418Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://120224.com/2017/09/24/test-of-kaggle-house-prices-predict/</loc>
     
     <lastmod>2018-12-30T17:34:37.163Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://120224.com/2017/12/29/the_logs_of_web_update/</loc>
-    
-    <lastmod>2018-12-28T19:40:45.335Z</lastmod>
     
   </url>
   
