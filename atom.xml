@@ -97,6 +97,31 @@
   </entry>
   
   <entry>
+    <title>只有MXNet能拯救你!</title>
+    <link href="http://120224.com/2017/09/23/only-mxnet-can-save-you/"/>
+    <id>http://120224.com/2017/09/23/only-mxnet-can-save-you/</id>
+    <published>2017-09-23T02:55:13.000Z</published>
+    <updated>2019-01-07T09:26:28.452Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="发现”新大陆”"><a href="#发现”新大陆”" class="headerlink" title="发现”新大陆”"></a>发现”新大陆”</h4><p>最近有幸拜读了李沐(沐神)和Aston zhang的大作<br>–基于MXNet和Gluon的深度学习教程&lt;动手学深度学习&gt;.<br>此课程简直是良心之作,完全免费面向几乎零基础的deep learner.<br>其实自己自2016年下半年就在自学机器学习/深度学习的内容,<br>到目前来看,最适合我的就是这门课程,言简意赅,概念方面也是层层递进,<br>一点不拖泥带水,而且是亚马逊研究院主任及团队成员亲自授课指导,<br>我真的找不到像他们这么奉献的团队了.</p><p>其实自己水平并不高,愚钝得很,每每在论坛上提问,Aston zhang也是很及时热情的解答,<br>令我有了学下去的动力.真的很是感激.</p><h4 id="坎坷求学路-有大神带”真香”"><a href="#坎坷求学路-有大神带”真香”" class="headerlink" title="坎坷求学路,有大神带”真香”:"></a>坎坷求学路,有大神带”真香”:</h4><p>我2016年年底学过唐宇迪的机器学习/深度学习课程,<br>2017年夏天也看过莫烦的博客,<br>了解过七月在线,亦咨询过小象学院,但觉得都不是很适合我.<br>要么就是皮毛,简浅无味,上升不到高度;要么深邃烧脑,不知所云,全篇PPT都是数学公式,让人望而却步.<br>感觉都是骗人的,圈钱,为了赚钱什么课程都能做出来卖.<br>当时真正开源的又少,大家都在韬光养晦地学习进步;<br>有人分享就少之又少了,大神就更没时间去做这些了,<br>所以说沐神团队能这些真的很伟大的!<br>后来我在找课程无果的情况下,就去了B站,期间学过好多课程:<br>有的断断续续不全面,也有的都是”科普”性质的easy lesson.<br>直到一次偶然的机会(2017-09-11),我遇到了Gluon/MXNet,<br>看了他们的视频觉得遇到了知音,索性就关注了他们,后期在斗鱼知乎上也都有关注的.<br>直到此时,我才决定暂时放弃tensorflow和keras转而拥向MXNet的怀抱.</p><h4 id="学海无涯"><a href="#学海无涯" class="headerlink" title="学海无涯"></a>学海无涯</h4><p>学习总是孤独的,不知自己熬过了多少个寂静/深邃夜晚,<br>放弃了多少简单快乐,又付出了多少宝贵的时间……<br>或许只有等你成功的时候别人才会理解你吧,但在那之前请你坚持,努力,坚持努力.<br>夯实基础也是很必要的,包括数学,英语,NumPy,pandas,Matplotlib,SciPy等等.<br>因为有了扎实的基础,对你后面学习理解意义重大.</p><h4 id="最后结尾"><a href="#最后结尾" class="headerlink" title="最后结尾"></a>最后结尾</h4><p>不求别人理解关注,只求自己心安,对得起自己足矣!<br>So,only mxnet can save you.fighting!</p><ul><li>邓先森 2017.09.23 望京</li></ul><h4 id="资源分享"><a href="#资源分享" class="headerlink" title="资源分享"></a>资源分享</h4><ul><li><p>《动手学深度学习》，面向中文读者、能运行、可讨论。<br>资源网站: zh.diveintodeeplearning.org<br>现在已经更新为:<a href="http://zh.d2l.ai" target="_blank" rel="noopener">http://zh.d2l.ai</a></p></li><li><p>《动手学深度学习》Bilibili网址:<br><a href="https://space.bilibili.com/209599371" target="_blank" rel="noopener">https://space.bilibili.com/209599371</a></p></li><li><p>《动手学深度学习》Github项目地址:<br><a href="https://github.com/d2l-ai/d2l-zh" target="_blank" rel="noopener">https://github.com/d2l-ai/d2l-zh</a></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;发现”新大陆”&quot;&gt;&lt;a href=&quot;#发现”新大陆”&quot; class=&quot;headerlink&quot; title=&quot;发现”新大陆”&quot;&gt;&lt;/a&gt;发现”新大陆”&lt;/h4&gt;&lt;p&gt;最近有幸拜读了李沐(沐神)和Aston zhang的大作&lt;br&gt;–基于MXNet和Gluon的深度学
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://120224.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="感想" scheme="http://120224.com/tags/%E6%84%9F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>leetcode_026_Remove_Duplicates_from_Sorted_Array</title>
     <link href="http://120224.com/2017/08/20/leetcode-026-Remove-Duplicates-from-Sorted-Array/"/>
     <id>http://120224.com/2017/08/20/leetcode-026-Remove-Duplicates-from-Sorted-Array/</id>
