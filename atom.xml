@@ -97,6 +97,35 @@
   </entry>
   
   <entry>
+    <title>leetcode-014-Longest-Common-Prefix</title>
+    <link href="http://120224.com/2017/08/19/leetcode-014-Longest-Common-Prefix/"/>
+    <id>http://120224.com/2017/08/19/leetcode-014-Longest-Common-Prefix/</id>
+    <published>2017-08-19T01:24:51.000Z</published>
+    <updated>2019-01-07T01:41:31.901Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="编写一个函数来查找字符串数组中的最长公共前缀。"><a href="#编写一个函数来查找字符串数组中的最长公共前缀。" class="headerlink" title="编写一个函数来查找字符串数组中的最长公共前缀。"></a>编写一个函数来查找字符串数组中的最长公共前缀。</h4><p>如果不存在公共前缀，返回空字符串 “”。</p><p>示例 1:</p><p>输入: [“flower”,”flow”,”flight”]<br>输出: “fl”<br>示例 2:</p><p>输入: [“dog”,”racecar”,”car”]<br>输出: “”<br>解释: 输入不存在公共前缀。<br>说明:</p><p>所有输入只包含小写字母 a-z 。</p><h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路:"></a>解题思路:</h4><p>暴力法:</p><ul><li>取出strs中第一个元素的第i个值和第j个元素的第i个值进行比较,相同则添加到sb中<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public String longestCommonPrefix(String[] strs) &#123;</span><br><span class="line">        <span class="keyword">if</span>(strs.length == 0) <span class="built_in">return</span> <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">if</span>(strs.length == 1) <span class="built_in">return</span> strs[0];</span><br><span class="line">        StringBuilder sb = new StringBuilder();</span><br><span class="line">        <span class="keyword">if</span>(strs.length &gt; 1)&#123;</span><br><span class="line">            int len = strs[0].length();</span><br><span class="line">            <span class="keyword">for</span>(int i = 0;i &lt; len;i++)&#123;</span><br><span class="line">                char curr = strs[0].charAt(i);</span><br><span class="line">                <span class="keyword">for</span>(int j = 1;j &lt; strs.length;j++)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(strs[j].length() &lt;= i || strs[j].charAt(i) != curr)&#123;</span><br><span class="line">                        <span class="built_in">return</span> sb.toString();</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span>(strs[j].charAt(i) == curr &amp;&amp; j == strs.length - 1)&#123;</span><br><span class="line">                        sb.append(curr);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>之后做了小改动,显得更简洁一些,用了substring()方法,但思路类似:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public static String longestCommonPrefix(String[] strs) &#123;</span><br><span class="line">        int count = strs.length;</span><br><span class="line">        String prefix = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">if</span>(count != 0)&#123;</span><br><span class="line">            prefix = strs[0];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(int i=1; i&lt;count; i++)&#123;</span><br><span class="line">            //关键代码，不断的从后往前截取字符串，然后与之相比，直到startsWith()返回<span class="literal">true</span></span><br><span class="line">            <span class="keyword">while</span>(!strs[i].startsWith(prefix))&#123;</span><br><span class="line">                prefix = prefix.substring(0, prefix.length()-1);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> prefix;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><table><thead><tr><th>采用方法</th><th>分别用时</th></tr></thead><tbody><tr><td>1</td><td>9ms</td></tr><tr><td>2</td><td>13ms</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;编写一个函数来查找字符串数组中的最长公共前缀。&quot;&gt;&lt;a href=&quot;#编写一个函数来查找字符串数组中的最长公共前缀。&quot; class=&quot;headerlink&quot; title=&quot;编写一个函数来查找字符串数组中的最长公共前缀。&quot;&gt;&lt;/a&gt;编写一个函数来查找字符串数组中的最
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="http://120224.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="leetcode" scheme="http://120224.com/tags/leetcode/"/>
+    
+      <category term="java" scheme="http://120224.com/tags/java/"/>
+    
+      <category term="力扣" scheme="http://120224.com/tags/%E5%8A%9B%E6%89%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>leetcode_007_Reverse-Integer</title>
     <link href="http://120224.com/2017/08/18/leetcode-007-Reverse-Integer/"/>
     <id>http://120224.com/2017/08/18/leetcode-007-Reverse-Integer/</id>
