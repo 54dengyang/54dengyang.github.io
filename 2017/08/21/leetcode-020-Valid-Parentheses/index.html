@@ -17,20 +17,21 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>归档: 2017/12 | diang</title>
-  <meta name="description" content="120224.com# dengyang Deep Learning">
-<meta name="keywords" content="拒绝逃避">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dengyang">
-<meta property="og:url" content="http://120224.com/archives/2017/12/index.html">
+  <title>leetcode_020_Valid_Parentheses | diang</title>
+  <meta name="description" content="给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例 1: 输入: “()”输出: true 示例 2: 输入: “()[]{}”输出: true 示例 3: 输入: “(]”输出: false 示例 4: 输入: “([)]”输出:">
+<meta name="keywords" content="leetcode,java,力扣">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leetcode_020_Valid_Parentheses">
+<meta property="og:url" content="http://120224.com/2017/08/21/leetcode-020-Valid-Parentheses/index.html">
 <meta property="og:site_name" content="dengyang">
-<meta property="og:description" content="120224.com# dengyang Deep Learning">
+<meta property="og:description" content="给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例 1: 输入: “()”输出: true 示例 2: 输入: “()[]{}”输出: true 示例 3: 输入: “(]”输出: false 示例 4: 输入: “([)]”输出:">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-11T18:50:13.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dengyang">
-<meta name="twitter:description" content="120224.com# dengyang Deep Learning">
+<meta name="twitter:title" content="leetcode_020_Valid_Parentheses">
+<meta name="twitter:description" content="给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例 1: 输入: “()”输出: true 示例 2: 输入: “()[]{}”输出: true 示例 3: 输入: “(]”输出: false 示例 4: 输入: “([)]”输出:">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://120224.com/archives/2017/12/index.html">
+  <link rel="canonical" href="http://120224.com/2017/08/21/leetcode-020-Valid-Parentheses/index.html">
   
     <link rel="alternate" href="/atom.xml" title="dengyang" type="application/atom+xml">
   
@@ -344,48 +345,209 @@
   
   
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title">归档: 2017/12</h1>
-	      <p class="text-muted">共 1 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
+  <div class="content">
+  <article id="post-leetcode-020-Valid-Parentheses" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
   
+    <h1 class="article-title" itemprop="name">
+      leetcode_020_Valid_Parentheses
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2017/08/21/leetcode-020-Valid-Parentheses/" class="article-date">
+	  <time datetime="2017-08-20T18:39:16.000Z" itemprop="datePublished">2017-08-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/算法/">算法</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/java/">java</a>, <a class="article-tag-link" href="/tags/leetcode/">leetcode</a>, <a class="article-tag-link" href="/tags/力扣/">力扣</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2017/08/21/leetcode-020-Valid-Parentheses/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 479(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h4 id="给定一个只包括-‘-‘，’-’，’-‘，’-’，’-‘，’-’-的字符串，判断字符串是否有效。"><a href="#给定一个只包括-‘-‘，’-’，’-‘，’-’，’-‘，’-’-的字符串，判断字符串是否有效。" class="headerlink" title="给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。"></a>给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。</h4><p>有效字符串需满足：</p>
+<p>左括号必须用相同类型的右括号闭合。<br>左括号必须以正确的顺序闭合。<br>注意空字符串可被认为是有效字符串。</p>
+<p>示例 1:</p>
+<p>输入: “()”<br>输出: true</p>
+<p>示例 2:</p>
+<p>输入: “()[]{}”<br>输出: true</p>
+<p>示例 3:</p>
+<p>输入: “(]”<br>输出: false</p>
+<p>示例 4:</p>
+<p>输入: “([)]”<br>输出: false</p>
+<p>示例 5:</p>
+<p>输入: “{[]}”<br>输出: true</p>
+<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>算法</p>
+<p>1.初始化栈 S。<br>2.一次处理表达式的每个括号。<br>3.如果遇到开括号，我们只需将其推到栈上即可。这意味着我们将稍后处理它，让我们简单地转到前面的子表达式。<br>4.如果我们遇到一个闭括号，那么我们检查栈顶的元素。如果栈顶的元素是一个相同类型的左括号，那么我们将它从栈中弹出并继续处理。否则，这意味着表达式无效。<br>5.如果到最后我们剩下的栈中仍然有元素，那么这意味着表达式无效。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    private HashMap&lt;Character,Character&gt; mappings;</span><br><span class="line">    </span><br><span class="line">    public <span class="function"><span class="title">Solution</span></span>()&#123;</span><br><span class="line">        this.mappings = new HashMap&lt;Character,Character&gt;();</span><br><span class="line">        this.mappings.put(<span class="string">')'</span>,<span class="string">'('</span>);</span><br><span class="line">        this.mappings.put(<span class="string">'&#125;'</span>,<span class="string">'&#123;'</span>);</span><br><span class="line">        this.mappings.put(<span class="string">']'</span>,<span class="string">'['</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public boolean isValid(String s) &#123;</span><br><span class="line">        Stack&lt;Character&gt; stack = new Stack&lt;Character&gt;();</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(int i = 0;i &lt; s.length();i++)&#123;</span><br><span class="line">            char c = s.charAt(i);</span><br><span class="line">            <span class="keyword">if</span>(this.mappings.containsKey(c))&#123;</span><br><span class="line">                char topElement = stack.empty() ? <span class="string">'#'</span> : stack.pop();</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">if</span>(topElement != this.mappings.get(c))&#123;</span><br><span class="line">                    <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                stack.push(c);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> stack.isEmpty();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h5><ul>
+<li>时间复杂度：O(n)，因为我们一次只遍历给定的字符串中的一个字符并在栈上进行O(1)的推入和弹出操作。</li>
+<li>空间复杂度：O(n)，当我们将所有的开括号都推到栈上时以及在最糟糕的情况下，我们最终要把所有括号推到栈上。例如 ((((((((((。</li>
+</ul>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://120224.com/2017/08/21/leetcode-020-Valid-Parentheses/" title="leetcode_020_Valid_Parentheses" target="_blank" rel="external">http://120224.com/2017/08/21/leetcode-020-Valid-Parentheses/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/54dengyang" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/54dengyang" target="_blank"><span class="text-dark">邓先森</span><small class="ml-1x">调包侠 &amp; 调参侠</small></a></h3>
+        <div>脚踏实地~切勿好高骛远。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
   
     
+  <section id="comments">
+  	
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg2Mi8xODQwOA==">
+        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+      </div>    
     
-      
-      
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2017" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2017
-            </a>
-            <!-- <a href="/archives/2017" class="archive-year">2017</a> -->
-          </h3>
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom="">
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2017/09/23/only-mxnet-can-save-you/" title="只有MXNet能拯救你!"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2017/08/20/leetcode-026-Remove-Duplicates-from-Sorted-Array/" title="leetcode_026_Remove_Duplicates_from_Sorted_Array"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/alipayimg.png" alt="扫码支持" title="扫一扫">
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/wechatpayimg.png" alt="扫码支持" title="扫一扫">
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="collapse2017" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2017">
-        <div class="panel-body">
-          <div class="collection">
-    
-    
-<a href="/2017/12/29/the_logs_of_web_update/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2017-12-28T18:12:01.000Z" itemprop="datePublished">2017-12-29</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> &lt;(￣︶￣)&gt; 网站更新情况记录 &lt;(￣︶￣)&gt;
-</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  
-  
-    </div></div></div></section>
-  
 
-	    </div>
-  	</article>
-  	 	
 </main>
 
   <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
@@ -441,6 +603,30 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+<script defer type="text/javascript">
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
 
 
 
