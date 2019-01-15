@@ -122,6 +122,35 @@
   </entry>
   
   <entry>
+    <title>leetcode_168_Excel_Sheet_Column_Title</title>
+    <link href="http://120224.com/2017/08/22/leetcode-168-Excel-Sheet-Column-Title/"/>
+    <id>http://120224.com/2017/08/22/leetcode-168-Excel-Sheet-Column-Title/</id>
+    <published>2017-08-22T00:01:55.000Z</published>
+    <updated>2019-01-15T00:28:17.103Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="给定一个正整数，返回它在-Excel-表中相对应的列名称。"><a href="#给定一个正整数，返回它在-Excel-表中相对应的列名称。" class="headerlink" title="给定一个正整数，返回它在 Excel 表中相对应的列名称。"></a>给定一个正整数，返回它在 Excel 表中相对应的列名称。</h4><p>例如，</p><pre><code>1 -&gt; A2 -&gt; B3 -&gt; C...26 -&gt; Z27 -&gt; AA28 -&gt; AB ...</code></pre><p>示例 1:</p><p>输入: 1<br>输出: “A”</p><p>示例 2:</p><p>输入: 28<br>输出: “AB”</p><p>示例 3:</p><p>输入: 701<br>输出: “ZY”</p><h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路:"></a>解题思路:</h4><p>把这个问题想象成是求26进制问题.</p><ul><li>1.拆分成&gt;26(继续做求余求商操作)和&lt;26(直接转成符号)两种情况处理</li><li>2.&gt;26时不停做 while 循环,每次求余的部分即添加到 sb 中,直到将 n 控制在&lt;26时将 n 也添加进 sb 中</li><li>3.最后做反转操作并变成 String</li></ul><h5 id="show-me-the-code"><a href="#show-me-the-code" class="headerlink" title="show me the code"></a>show me the code</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public String convertToTitle(int n) &#123;</span><br><span class="line">    // 创建整形变量 m 待用</span><br><span class="line">        int m;</span><br><span class="line">        // 创建 StringBuffer 变量待用</span><br><span class="line">        StringBuffer sb = new StringBuffer();</span><br><span class="line">        // <span class="keyword">while</span> 循环,不停地做%26和/26操作</span><br><span class="line">        <span class="keyword">while</span>(n &gt; 26)&#123;</span><br><span class="line">        // 如果n%26==0,说明是含有<span class="string">"Z"</span>的</span><br><span class="line">            <span class="keyword">if</span>(n % 26 == 0)&#123;</span><br><span class="line">            // 此时需要确定<span class="string">"Z"</span>前面是什么,即 n 是什么</span><br><span class="line">                n = n / 26 - 1;</span><br><span class="line">                // 现在 sb 中添加上<span class="string">"Z"</span></span><br><span class="line">                sb.append(<span class="string">'Z'</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            // 第二种情况:n 不能被26整除</span><br><span class="line">            // m 为组成部分后面的部分</span><br><span class="line">                m = n % 26;</span><br><span class="line">                // n 为组成部分前面的部分</span><br><span class="line">                n = n / 26;</span><br><span class="line">                // 将 m 添加到 sb 中</span><br><span class="line">                sb.append((char)(m + 64));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        // 把 n 添加到 sb 中(对所有情况而言)</span><br><span class="line">        sb.append((char)(n + 64));</span><br><span class="line">        // 将 sb 翻转,并转成 String 格式</span><br><span class="line">        <span class="built_in">return</span> sb.reverse().toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;给定一个正整数，返回它在-Excel-表中相对应的列名称。&quot;&gt;&lt;a href=&quot;#给定一个正整数，返回它在-Excel-表中相对应的列名称。&quot; class=&quot;headerlink&quot; title=&quot;给定一个正整数，返回它在 Excel 表中相对应的列名称。&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="http://120224.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="leetcode" scheme="http://120224.com/tags/leetcode/"/>
+    
+      <category term="java" scheme="http://120224.com/tags/java/"/>
+    
+      <category term="力扣" scheme="http://120224.com/tags/%E5%8A%9B%E6%89%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>leetcode_020_Valid_Parentheses</title>
     <link href="http://120224.com/2017/08/21/leetcode-020-Valid-Parentheses/"/>
     <id>http://120224.com/2017/08/21/leetcode-020-Valid-Parentheses/</id>
