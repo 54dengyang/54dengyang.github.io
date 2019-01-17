@@ -122,6 +122,64 @@
   </entry>
   
   <entry>
+    <title>leetcode_121_Best_Time_to_Buy_and_Sell_Stock</title>
+    <link href="http://120224.com/2017/08/24/leetcode-121-Best-Time-to-Buy-and-Sell-Stock/"/>
+    <id>http://120224.com/2017/08/24/leetcode-121-Best-Time-to-Buy-and-Sell-Stock/</id>
+    <published>2017-08-24T05:50:07.000Z</published>
+    <updated>2019-01-17T05:58:37.486Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="给定一个数组，它的第-i-个元素是一支给定股票第-i-天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。"><a href="#给定一个数组，它的第-i-个元素是一支给定股票第-i-天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。" class="headerlink" title="给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。"></a>给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。</h4><p>注意你不能在买入股票前卖出股票。</p><p>示例 1:</p><p>输入: [7,1,5,3,6,4]<br>输出: 5<br>解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。</p><p>示例 2:</p><p>输入: [7,6,4,3,1]<br>输出: 0<br>解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。</p><h5 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h5><p>我们需要找出给定数组中两个数字之间的最大差值（即，最大利润）。此外，第二个数字（卖出价格）必须大于第一个数字（买入价格）。</p><p>形式上，对于每组 i 和 j（其中j&gt;i）我们需要找出max(prices[j]−prices[i])。</p><h5 id="方法一：暴力法"><a href="#方法一：暴力法" class="headerlink" title="方法一：暴力法"></a>方法一：暴力法</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int maxProfit(int[] prices) &#123;</span><br><span class="line">        int maxprofit = 0;</span><br><span class="line">        <span class="keyword">for</span>(int i = 0;i &lt; prices.length - 1;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(int j = i + 1;j &lt; prices.length;j++)&#123;</span><br><span class="line">                int profit = prices[j] - prices[i];</span><br><span class="line">                <span class="keyword">if</span>(profit &gt; maxprofit)&#123;</span><br><span class="line">                    maxprofit = profit;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> maxprofit;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h5><ul><li>时间复杂度：O(n^2)。循环运行n(n−1)/2次。</li><li>空间复杂度：O(1)。只使用了两个变量 —— maxprofit和profit</li></ul><h5 id="方法二：一次遍历"><a href="#方法二：一次遍历" class="headerlink" title="方法二：一次遍历"></a>方法二：一次遍历</h5><p>-todo 分析 @dengyang</p><h5 id="复杂度分析-1"><a href="#复杂度分析-1" class="headerlink" title="复杂度分析"></a>复杂度分析</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int maxProfit(int[] prices) &#123;</span><br><span class="line">        int minprice = Integer.MAX_VALUE;</span><br><span class="line">        int maxprofit = 0;</span><br><span class="line">        <span class="keyword">for</span>(int i = 0;i &lt; prices.length;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(prices[i] &lt; minprice)&#123;</span><br><span class="line">                minprice = prices[i];</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(prices[i] - minprice &gt; maxprofit)&#123;</span><br><span class="line">                maxprofit = prices[i] - minprice;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> maxprofit;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>时间复杂度：O(n)。只需要遍历一次。</li><li>空间复杂度：O(1)。只使用了两个变量。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;给定一个数组，它的第-i-个元素是一支给定股票第-i-天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。&quot;&gt;&lt;a href=&quot;#给定一个数组，它的第-i-个元素是一支给定股票第-i-天的价格。如果你最多只允许完
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="http://120224.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="leetcode" scheme="http://120224.com/tags/leetcode/"/>
+    
+      <category term="java" scheme="http://120224.com/tags/java/"/>
+    
+      <category term="力扣" scheme="http://120224.com/tags/%E5%8A%9B%E6%89%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode_021_Merge_Two_Sorted_Lists</title>
+    <link href="http://120224.com/2017/08/23/leetcode-021-Merge-Two-Sorted-Lists/"/>
+    <id>http://120224.com/2017/08/23/leetcode-021-Merge-Two-Sorted-Lists/</id>
+    <published>2017-08-23T01:00:04.000Z</published>
+    <updated>2019-01-15T01:10:57.717Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。"><a href="#将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。" class="headerlink" title="将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。"></a>将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。</h4><p>示例：</p><p>输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4<br>输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</p><h5 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h5><h5 id="show-me-the-code"><a href="#show-me-the-code" class="headerlink" title="show me the code"></a>show me the code</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Definition <span class="keyword">for</span> singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span><br><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode mergeTwoLists(ListNode l1, ListNode l2) &#123;</span><br><span class="line">        // 类似归并排序中的合并过程</span><br><span class="line">        // 分别创建ListNode类型的 dummyHead 和 cur 待用</span><br><span class="line">        ListNode dummyHead = new ListNode(0);</span><br><span class="line">        ListNode cur = dummyHead;</span><br><span class="line">        // 循环判断:当传入的l1和l2都不是空时进行<span class="keyword">while</span>循环操作</span><br><span class="line">        <span class="keyword">while</span>(l1 != null &amp;&amp; l2 != null)&#123;</span><br><span class="line">        // 比较l1和l2中的元素大小</span><br><span class="line">            <span class="keyword">if</span>(l1.val &lt; l2.val)&#123;</span><br><span class="line">                cur.next = l1;</span><br><span class="line">                cur = cur.next;</span><br><span class="line">                l1 = l1.next;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                cur.next = l2;</span><br><span class="line">                cur = cur.next;</span><br><span class="line">                l2 = l2.next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        // 任意一个为空时,直接连接另一条链条</span><br><span class="line">        <span class="keyword">if</span>(l1 == null)&#123;</span><br><span class="line">            cur.next = l2;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cur.next = l1;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> dummyHead.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。&quot;&gt;&lt;a href=&quot;#将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。&quot; class=&quot;headerlink&quot; title=&quot;
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="http://120224.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="leetcode" scheme="http://120224.com/tags/leetcode/"/>
+    
+      <category term="java" scheme="http://120224.com/tags/java/"/>
+    
+      <category term="力扣" scheme="http://120224.com/tags/%E5%8A%9B%E6%89%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>leetcode_168_Excel_Sheet_Column_Title</title>
     <link href="http://120224.com/2017/08/22/leetcode-168-Excel-Sheet-Column-Title/"/>
     <id>http://120224.com/2017/08/22/leetcode-168-Excel-Sheet-Column-Title/</id>
